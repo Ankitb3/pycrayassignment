@@ -15,7 +15,12 @@ You can **add events, view all events, mark them as done, and delete them**.
 - 🎨 Modern UI with **TailwindCSS&AccernityUI**  
 
 ---
+## ⚡ paths of page
+- "/" for landing page
+- "/events" for add events
+- "/events/list" for all list
 
+---
 ## 📸 Screenshots
 
 ### 🏠 Landing Page
