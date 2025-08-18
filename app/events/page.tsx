@@ -1,7 +1,12 @@
 "use client"
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
+import { usePathname, useRouter } from 'next/navigation';
+import { useUser } from '@clerk/nextjs';
+import { Router } from 'next/router';
+import { toast } from 'react-toastify';
+import { Navbar } from '@/components/Navbar';
 
 interface Event {
     id: string;
@@ -15,7 +20,18 @@ export default function EventsPage() {
     const [eventDate, setEventDate] = useState('');
     const [dateError, setDateError] = useState('');
     const [showAllEvents, setShowAllEvents] = useState(false);
+      const { isLoaded, isSignedIn } = useUser();
+  const router = useRouter();
 
+   useEffect(() => {
+    if (isLoaded && !isSignedIn) {
+         toast.error(`Please sign in your account first`, {
+                position: "top-center",
+                autoClose: 3000,
+              });
+      router.push("/"); 
+    }
+  }, [isSignedIn, router]);
     // Get today's date in YYYY-MM-DD format for min date validation
     const today = new Date().toISOString().split('T')[0];
 
@@ -73,6 +89,7 @@ export default function EventsPage() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 p-4">
+            <Navbar/>
             <Link href={'/'}>Back</Link>
             <div className="max-w-4xl mx-auto">
                 {/* Header */}
