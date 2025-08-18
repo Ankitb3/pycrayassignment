@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { toast, ToastContainer } from "react-toastify";
 import { Navbar } from "./Navbar";
+import { ShineBorder } from "./magicui/shine-border";
 
 export default function HeroSectionOne() {
   const { isLoaded, isSignedIn } = useUser();
@@ -95,11 +96,17 @@ export default function HeroSectionOne() {
               Add Event Now
             </button>
           )}
-
-          <button onClick={() => handleClick("view events list")}
+          {
+            isSignedIn ?  <Link href={'/events/list'}><button onClick={() => handleClick("view events list")}
             className="w-60 cursor-pointer transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
             View All Events Lists
+          </button></Link> :  <button onClick={() => handleClick("view events list")}
+            className="w-60 cursor-pointer transform rounded-lg disable border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
+            View All Events Lists
           </button>
+          }
+         
+          
         </motion.div>
         <motion.div
           initial={{

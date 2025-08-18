@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📅 Evently
 
-## Getting Started
+Evently is a simple **event management app** built with **Next.js 14, TypeScript, TailwindCSS, Clerk (auth), Zustand (state management), and Supabase (database)**.  
+You can **add events, view all events, mark them as done, and delete them**.  
 
-First, run the development server:
+---
 
+## ⚡ Features
+- 🔑 Authentication with [Clerk](https://clerk.com)  
+- ➕ Add events with name & date  
+- 📋 View all events in a clean list  
+- ✅ Mark events as completed  
+- ❌ Delete single event or clear all events  
+- 🗄️ Events stored persistently in **Supabase**  
+- 🎨 Modern UI with **TailwindCSS&AccernityUI**  
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Landing Page
+![Landing Page](./public/landing.png)
+
+### ➕ Add Event Page
+![Add Event Page](./public/add.png)
+
+### 📋 Events List Page
+![Events List Page](./public/allEvent.png)
+
+*(Add your actual screenshots inside a `/screenshots` folder in your repo so they render properly.)*
+
+---
+
+## 🛠️ Tech Stack
+- [Next.js 14](https://nextjs.org/) (App Router, SSR)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [TailwindCSS](https://tailwindcss.com/)  
+- [Clerk](https://clerk.com/) (authentication)  
+- [Zustand](https://zustand-demo.pmnd.rs/) (state management)  
+- [Accernity UI]() (animation)  
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository and run
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+git clone https://github.com/your-username/evently.git
+cd evently
 pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

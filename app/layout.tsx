@@ -4,7 +4,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
-  title: "Event Manager",
+  title: "Evently",
   description: "Add and manage your events easily",
 };
 
