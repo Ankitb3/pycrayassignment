@@ -124,7 +124,13 @@ const EventsList = () => {
                                 >
                                     🗑️
                                 </button>
-                               
+                                <button
+                                    onClick={() => toggleDone(event.id)}
+                                    className="p-2 text-green-500 hover:bg-green-50 rounded-lg transition-colors cursor-pointer"
+                                    title="Mark as done"
+                                >
+                                    ✅
+                                </button>
                             </div>
                         </div>
                     ))
