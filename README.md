@@ -2,7 +2,14 @@
 
 Evently is a simple **event management app** built with **Next.js 14, TypeScript, TailwindCSS, Clerk (auth), Zustand (state management), and Supabase (database)**.  
 You can **add events, view all events, mark them as done, and delete them**.  
+## 🚀 Getting Started
 
+### 1️⃣ Clone the repository and run
+```bash
+git clone https://github.com/your-username/evently.git
+cd evently
+pnpm install or npm i
+pnpm dev
 ---
 
 ## ⚡ Features
@@ -53,10 +60,3 @@ CLERK_SECRET_KEY=sk_test_9MIupjvy6zOOtO0z81aDueYvfAAbA2hzuIF6T19rwu
 
 ---
 
-## 🚀 Getting Started
-
-### 1️⃣ Clone the repository and run
-```bash
-git clone https://github.com/your-username/evently.git
-cd evently
-pnpm dev
