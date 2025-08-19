@@ -21,6 +21,13 @@ You can **add events, view all events, mark them as done, and delete them**.
 - "/events/list" for all list
 
 ---
+
+---
+## ⚡ .env 
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_YmV0dGVyLW1vbmtmaXNoLTgzLmNsZXJrLmFjY291bnRzLmRldiQ
+CLERK_SECRET_KEY=sk_test_9MIupjvy6zOOtO0z81aDueYvfAAbA2hzuIF6T19rwu
+
+---
 ## 📸 Screenshots
 
 ### 🏠 Landing Page
